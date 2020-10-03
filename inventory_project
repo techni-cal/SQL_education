@@ -1,0 +1,20 @@
+CREATE TABLE store_inventory (id INTEGER, name TEXT, inventory INTEGER, location TEXT, price REAL);
+
+INSERT INTO store_inventory VALUES (1, "Couch", 4, "Living Room", 200);
+INSERT INTO store_inventory VALUES (2, "Chair", 12, "General", 50);
+INSERT INTO store_inventory VALUES (3, "Loveseat", 2, "Living Room", 200);
+INSERT INTO store_inventory VALUES (4, "Table", 3, "General", 150);
+INSERT INTO store_inventory VALUES (5, "Lawn Chair", 6, "Outdoors", 50);
+INSERT INTO store_inventory VALUES (6, "Umbrella", 1, "Outdoors", 100);
+INSERT INTO store_inventory VALUES (7, "Chaise", 2, "Living Room", 200);
+INSERT INTO store_inventory VALUES (8, "Dining Room Table", 3, "Dining Room", 150);
+INSERT INTO store_inventory VALUES (9, "Outdoor Chair", 6 , "Outdoors", 50);
+INSERT INTO store_inventory VALUES (10, "Bed Frame", 2, "Bedroom", 250);
+INSERT INTO store_inventory VALUES (12, "End Table", 4, "Bedroom", 50);
+INSERT INTO store_inventory VALUES (13, "Bookshelf", 4, "Office", 50);
+INSERT INTO store_inventory VALUES (13, "Office Chair", 1, "Office", 75);
+INSERT INTO store_inventory VALUES (14, "Desk", 1, "Office", 100);
+INSERT INTO store_inventory VALUES (15, "Living Room Table", 3, "Living Room", 150);
+
+SELECT * from store_inventory ORDER BY price ASC;
+SELECT AVG(price) from store_inventory;
