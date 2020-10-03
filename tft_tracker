@@ -1,0 +1,19 @@
+CREATE TABLE tft_tracker (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    placement INTEGER,
+    played_comp TEXT,
+    winning_comp TEXT
+    );
+
+INSERT INTO tft_tracker (placement, played_comp, winning_comp) VALUES (3, "Elderwood/Hunter", "Sharpshooter");
+INSERT INTO tft_tracker (placement, played_comp, winning_comp) VALUES (1, "Moonlight/Hunters", "Moonlight/Hunter");
+INSERT INTO tft_tracker (placement, played_comp, winning_comp) VALUES (7, "Warlord", "Shade");
+INSERT INTO tft_tracker (placement, played_comp, winning_comp) VALUES (5, "Brawlers", "Cultist");
+
+UPDATE tft_tracker SET winning_comp = "Sharpshooter" WHERE id = 4;
+
+SELECT * FROM tft_tracker;
+
+DELETE FROM tft_tracker WHERE id = 3;
+
+SELECT * FROM tft_tracker;
