@@ -1,2 +1,2 @@
 # education
-Compilation of projects I created during learning code.
+Compilation of projects I created during learning SQL.
